@@ -1,0 +1,37 @@
+<!-- <html>
+
+<head>
+    <title>Single artile view</title>
+</head>
+
+<body>
+
+    <h1>All Article View</h1>
+    <% console.log(articles) %>
+        <ul>
+            <% articles.forEach((article)=> { %>
+                <li>
+                    <%= article.title %>
+                </li>
+                <% }) %>
+        </ul>
+
+</body>
+
+</html> -->
+
+
+
+
+<!-- partials , to include the portion of the page that will be repeated -->
+<%- include('partials/header.ejs') %>
+    <h1>All Article View</h1>
+    <% console.log(articles) %>
+        <ul>
+            <% articles.forEach((article)=> { %>
+                <li>
+                    <%= article.title %>
+                </li>
+                <% }) %>
+        </ul>
+        <%- include('partials/footer.ejs') %>

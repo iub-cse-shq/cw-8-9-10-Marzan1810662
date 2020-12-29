@@ -1,0 +1,31 @@
+<!-- <html>
+
+<head>
+    <title>Single artile view</title>
+</head>
+
+<body>
+    <h1>Single Article View</h1>
+    <h2>
+        Title:
+        <%= article.title %>
+    </h2>
+    <p>
+        <%= article.content %>
+    </p>
+</body>
+
+</html> -->
+
+
+<!-- partials , to include the portion of the page that will be repeated -->
+<%- include('partials/header.ejs') %>
+    <h1>Single Article View</h1>
+    <h2>
+        Title:
+        <%= article.title %>
+    </h2>
+    <p>
+        <%= article.content %>
+    </p>
+    <%- include('partials/footer.ejs') %>
